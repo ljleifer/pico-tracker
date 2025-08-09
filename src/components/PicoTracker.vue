@@ -193,7 +193,7 @@ export default {
   padding: 10px;
 }
 .fixed {
-  width: 300px;
+  min-width: 300px;
 }
 .column {
   flex-direction: column;
