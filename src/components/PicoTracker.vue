@@ -103,7 +103,7 @@
         <div v-if="character.aspects.length == 0" class="box">
           <p>No Aspects</p>
         </div>
-        <div v-else v-for="aspect, aspectIndex in character.aspects" class="box column" style="margin: 5px;">
+        <div v-else v-for="aspect, aspectIndex in character.aspects" class="column" style="margin: 5px;">
           <p>{{ aspect.name }}</p>
           <div>
             <div v-for="value, healthIndex in aspect.health.split('')" style="margin: 0 2px;">
@@ -191,7 +191,7 @@ export default {
     },
   },
   async beforeMount() {
-    this.characterData = JSON.parse(localStorage.getItem('picoCharacterData')) || [{"characterName":"Guinness the Beetle","playerName":"Logan","aspects":[{"name":"Widewings","health":"hhh"},{"name":"Tankling + Rotund","health":"h.h.hh"},{"name":"Angulomorph","health":"h."},{"name":"Blockomorph","health":"h."}],"negativeMood":"Scornful","positiveMood":"Content","mood":"3"},{"characterName":"Inwë Ælensar","playerName":"Kristian","aspects":[{"name":"Widewings + Hydrophobic","health":"hhh.hh"},{"name":"Thimblefriend + Exaggero","health":"hhhh"},{"name":"Sewing Needle","health":"hhhh"}],"negativeMood":"Scornful","positiveMood":"Focused","mood":"3"},{"characterName":"Xana Goodfellow","playerName":"Ethan","aspects":[{"name":"Hardshell + Ornate","health":"h.hhh.hh"},{"name":"Mind Palace","health":"hh"},{"name":"Logic Center","health":"hhhh"},{"name":"Eurekaling","health":"hhh"}],"positiveMood":"Creative","negativeMood":"Detached","mood":"3"},{"characterName":"Shadowsting the Dracomantis","playerName":"Nick","aspects":[{"name":"Mandibles + Cannibalizing + Xenic","health":"hh.hhh.h"},{"name":"Many-Eyes","health":"h.h"},{"name":"Flutterflaps","health":"hh"},{"name":"Goggles","health":"hhhhh"}],"negativeMood":"Snappy","positiveMood":"Jaunty","mood":"3"}]
+    this.characterData = JSON.parse(localStorage.getItem('picoCharacterData')) || [{"characterName":"Guinness the Beetle","playerName":"Logan","aspects":[{"name":"Widewings","health":"hhh"},{"name":"Tankling + Rotund","health":"h.h.hh"},{"name":"Angulomorph","health":"h."},{"name":"Blockomorph","health":"h."}],"negativeMood":"Scornful","positiveMood":"Content","mood":"3"},{"characterName":"Inwë Ælensar","playerName":"Kristian","aspects":[{"name":"Widewings + Hydrophobic","health":"hhh.hh"},{"name":"Thimblefriend + Exaggero","health":"hhhh"},{"name":"Sewing Needle","health":"hhhh"}],"negativeMood":"Scornful","positiveMood":"Focused","mood":"3"},{"characterName":"Xana Goodfellow","playerName":"Ethan","aspects":[{"name":"Hardshell + Ornate","health":"h.hhh.hh"},{"name":"Mind Palace","health":"hh"},{"name":"Logic Center","health":"hhhh"},{"name":"Psy-pulser","health":"hhh"}],"positiveMood":"Creative","negativeMood":"Detached","mood":"3"},{"characterName":"Shadowsting the Dracomantis","playerName":"Nick","aspects":[{"name":"Mandibles + Cannibalizing + Xenic","health":"hh.hhh.h"},{"name":"Many-Eyes","health":"h.h"},{"name":"Flutterflaps","health":"hh"},{"name":"Goggles","health":"hhhhh"}],"negativeMood":"Snappy","positiveMood":"Jaunty","mood":"3"}]
     this.trackData = JSON.parse(localStorage.getItem('picoTrackData')) || []
   },
 }
