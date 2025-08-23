@@ -9,7 +9,7 @@
   </div>
 
   <div class="body">
-    <div v-if="editMode">
+    <div v-if="editMode" style="flex-wrap: wrap;">
       <div v-if="trackData.length == 0" class="box fixed">
         <p>No Tracks</p>
       </div>
@@ -23,7 +23,7 @@
       <img src="../assets/add.png" @click="addNewTrack" title="Add New Track"/>
     </div>
 
-    <div v-else>
+    <div v-else style="flex-wrap: wrap;">
       <div v-if="trackData.length == 0" class="box fixed">
         <p>No Tracks</p>
       </div>
